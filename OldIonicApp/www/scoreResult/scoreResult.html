@@ -1,0 +1,29 @@
+<ion-view view-title="{{'scoreResult.TITLE' | translate}}">
+    <ion-content>
+
+        <div class="card">
+            <div class="item item-divider item-balanced">
+                {{'scoreResult.SCORE_HEADER' | translate}}
+            </div>
+            <div class="item item-text-wrap">
+                {{'scoreResult.POINTS' | translate}}: {{vm.score}}
+            </div>
+            <div class="item item-text-wrap" ng-show="vm.showMultiplication">
+                {{'scoreResult.MULTIPLIED' | translate}} ({{vm.multiplicationFactor}}x): {{vm.multipliedScore}}
+            </div>
+        </div>
+
+        <div class="card" ng-show="vm.oponentScore">
+            <div class="item item-divider item-assertive">
+                {{'scoreResult.SCORE_OPONENT_HEADER' | translate}}
+            </div>
+            <div class="item item-text-wrap">
+                {{'scoreResult.POINTS' | translate}}: {{vm.oponentScore}}
+            </div>
+            <div class="item item-text-wrap" ng-show="vm.showMultiplication">
+                {{'scoreResult.MULTIPLIED' | translate}} ({{vm.multiplicationFactor}}x): {{vm.oponentMultipliedScore}}
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,18 @@
+<ion-view view-title="{{'settings.TITLE' | translate}}">
+    <ion-content>
+        <div class="list">
+            <label class="item item-select item-stacked-label">
+                <span class="select-label">{{'settings.LANGUAGE' | translate}}</span>
+                <select ng-model="vm.language"
+                        ng-options="languageOption.code as languageOption.name for languageOption in vm.languageOptions" ng-change="vm.saveSettings()"></select>
+            </label>
+            <label class="item item-select item-stacked-label">
+                <span class="select-label">{{'settings.DECKTYPE' | translate}}</span>
+                <select ng-model="vm.deckType"
+                        ng-options="deckTypeOption.code as deckTypeOption.name for deckTypeOption in vm.deckTypeOptions" ng-change="vm.saveSettings()"></select>
+            </label>
+
+        </div>
+
+    </ion-content>
+</ion-view>

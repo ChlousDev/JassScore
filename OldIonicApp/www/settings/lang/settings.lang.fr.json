@@ -1,0 +1,10 @@
+{
+  "settings":
+  {
+    "TITLE" : "Einstellungen",
+    "LANGUAGE": "Sprache",
+    "DECKTYPE": "Kartenset",
+    "DECKTYPE_DE": "Deutsch",
+    "DECKTYPE_FR": "Französisch"
+  }
+}

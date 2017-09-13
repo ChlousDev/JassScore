@@ -1,0 +1,28 @@
+{
+  "cardScanning": {
+    "TITLE": "Punktberechnung",
+    "MODE": "Modus",
+    "TRUMPCOLOR": "Trumpf",
+    "STARTING": "Start",
+    "LASTROUND": "Letzter Stich",
+    "MATCH": "Match",
+    "MULTIPLICATIONFACTOR": "Multiplikationsfaktor",
+    "CALCULATE": "Berechnen",
+    "MODE_TRUMP": "Trumpf",
+    "MODE_TOPDOWN": "Obenabe",
+    "MODE_BOTTOMUP": "Ungenufe",
+    "MODE_SLALOM": "Slalom",
+    "MODE_FIVEFOUR": "5/4",
+    "MODE_MISERE": "Misère",
+    "START_TOP": "Oben",
+    "START_BOTTOM": "Unten",
+    "TRUMP_HERZ": "Herz",
+    "TRUMP_PIK": "Pik",
+    "TRUMP_KARO": "Karo",
+    "TRUMP_KREUZ": "Kreuz",
+    "TRUMP_ROSEN": "Rosen",
+    "TRUMP_SCHILTEN": "Schilten",
+    "TRUMP_SCHELLEN": "Schellen",
+    "TRUMP_EICHEL": "Eichel"
+  }
+}

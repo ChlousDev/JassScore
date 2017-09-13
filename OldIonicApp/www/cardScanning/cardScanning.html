@@ -1,0 +1,47 @@
+<ion-view view-title="{{'cardScanning.TITLE' | translate}}">
+
+    <ion-nav-buttons side="right">
+        <a class="tab-item" href="#jassScore/settings">
+            <i class="icon ion-android-menu"></i>
+        </a>
+    </ion-nav-buttons>
+
+    <ion-content>
+        <div class="list">
+            <label class="item">
+                <ion-checkbox ng-model="vm.match">{{'cardScanning.MATCH' | translate}}</ion-checkbox>
+            </label>
+            <label class="item" ng-show="vm.showLastRound()">
+                <ion-checkbox ng-model="vm.lastRound">{{'cardScanning.LASTROUND' | translate}}</ion-checkbox>
+            </label>
+
+            <label class="item item-select item-stacked-label" ng-show="vm.showModeSelection()">
+                <span class="select-label">{{'cardScanning.MODE' | translate}}</span>
+                <select ng-model="vm.mode"
+                        ng-options="modeOption.code as modeOption.name for modeOption in vm.modeOptions"></select>
+            </label>
+            <label class="item item-select item-stacked-label" ng-show="vm.showTrumpSelection()">
+                <span class="select-label">{{'cardScanning.TRUMPCOLOR' | translate}}</span>
+                <select ng-model="vm.trumpColor"
+                        ng-options="trumpOption.code as trumpOption.name for trumpOption in vm.trumpOptions"></select>
+            </label>
+            <label class="item item-select item-stacked-label" ng-show="vm.showStartSelection()">
+                <span class="select-label">{{'cardScanning.STARTING' | translate}}</span>
+                <select ng-model="vm.start"
+                        ng-options="startOption.code as startOption.name for startOption in vm.startOptions"></select>
+            </label>
+
+            <label class="item item-select item-stacked-label">
+                <span class="input-label">{{'cardScanning.MULTIPLICATIONFACTOR' | translate}}</span>
+                <select ng-model="vm.multiplicator"
+                        ng-options="multiplicatorOption.value as multiplicatorOption.name for multiplicatorOption in vm.multiplicatorOptions"></select>
+            </label>
+
+        </div>
+
+        <div>
+            <Button class="button button-block button-energized" ng-click="vm.scanCards()">{{'cardScanning.CALCULATE' | translate}}</Button>
+        </div>
+
+    </ion-content>
+</ion-view>
